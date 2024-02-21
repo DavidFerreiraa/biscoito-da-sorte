@@ -11,18 +11,18 @@
 </head>
 <body>
     <main>
-        <div class="screen1 hidden">
+        <div class="screen1">
             <h1>Qual é a sua sorte hoje?</h1>
             <p>Abra o biscoito e descubra</p>
-            <img src="./assets/fortune-cookie.png" alt="biscoito da sorte fechado"/>
+            <img src="./assets/fortune-cookie.png" alt="biscoito da sorte fechado" id="closedCookie"/>
         </div>
-        <div class="screen2">
+        <div class="screen2 hidden">
             <h1>Aqui está a sua sorte de hoje:</h1>
             <div class="paper">
-                <p>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu</p>
+                <p id="phrase">Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu</p>
             </div>
-            <img src="./assets/opened-cookie.png" alt="biscoito da sorte aberto"/>
-            <button>Abrir outro biscoito</button>
+            <img src="./assets/opened-cookie.png" alt="biscoito da sorte aberto" id="openedCookie"/>
+            <button id="openAnotherCookie">Abrir outro biscoito</button>
         </div>
     </main>
     <script src="./main.js"></script>

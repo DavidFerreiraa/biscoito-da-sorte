@@ -13,6 +13,7 @@
     --color-blue-100: #E4EDF1;
     --color-blue-900: #34355B;
     --color-orange: #FF9500;
+    --color-orange-700: #cc7700;
 }
 
 html, body, button {
@@ -61,6 +62,10 @@ main img {
     margin-top: 2rem;
 }
 
+main img:hover {
+    animation: tilt-shaking 200ms alternate infinite;
+}
+
 .screen2 {
     max-width: 30rem;
     max-height: 46rem;
@@ -90,8 +95,26 @@ main img {
 
     border: none;
     border-radius: 4px;
+
+    transition: background 500ms;
+}
+
+.screen2 button:hover {
+    background-color: var(--color-orange-700);
 }
 
 .hidden {
     display: none;
 }
+
+.openedCookie {
+    background-image: linear-gradient(225deg, var(--gradient-purple))
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
